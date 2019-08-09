@@ -1,5 +1,5 @@
 {
-  "name": "terra",
+  "name": "sayonika",
   "version": "0.0.1",
   "description": "Official and reference API Wrapper for Sayonika REST server.",
   "main": "index.js",
