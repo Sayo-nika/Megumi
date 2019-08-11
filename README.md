@@ -6,7 +6,7 @@ Unlike most official API wrappers, Megumi is a zero-dependency, Promise-based AP
 
 ## Installation
 
-`yarn install sayonika` or `npm i -S sayonika`.
+`yarn add sayonika` or `npm i -S sayonika`.
 
 ## API Documentation
 
