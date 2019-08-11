@@ -17,7 +17,7 @@ The main API class that handles Sayonika requests.
 
 #### Constructor Parameters
 
-| Paramater | Type | Description |
+| Parameter | Type | Description |
 |----| ---- | --- |
 | `token` | `String` | Your API key for Sayonika. This can be get via checking your request headers in browser. Look for the parameter `Authorization`. |
 | `api_base_url` | `String` | The base URL that API calls are made to, with a trailing slash. Default is `https://sayonika.maidcafe.cf/api/v1/` |
@@ -30,7 +30,7 @@ The main API class that handles Sayonika requests.
 
 Gets users listed in the database.
 
-| Paramater | Type | Description |
+| Parameter | Type | Description |
 |----| ---- | --- |
 | `page` | `Number` | The page of the list you plan to check. |
 
@@ -40,7 +40,7 @@ Gets users listed in the database.
 
 Gets mods listed in the database.
 
-| Paramater | Type | Description |
+| Parameter | Type | Description |
 |----| ---- | --- |
 | `page` | `Number` | The page of the list you plan to check. |
 
@@ -50,7 +50,7 @@ Gets mods listed in the database.
 
 Gets user registered in the database via ID.
 
-| Paramater | Type | Description |
+| Parameter | Type | Description |
 |----| ---- | --- |
 | `id` | `String` | The id of the specific user to get query to. |
 
@@ -60,7 +60,7 @@ Gets user registered in the database via ID.
 
 Gets mod listed in the database via ID.
 
-| Paramater | Type | Description |
+| Parameter | Type | Description |
 |----| ---- | --- |
 | `id` | `String` | The id of the specific mod to get query to. |
 
