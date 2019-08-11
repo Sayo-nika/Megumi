@@ -20,6 +20,7 @@ The main API class that handles Sayonika requests.
 | Paramater | Type | Description |
 |----| ---- | --- |
 | `token` | `String` | Your API key for Sayonika. This can be get via checking your request headers in browser. Look for the parameter `Authorization`. |
+| `api_base_url` | `String` | The base URL that API calls are made to, with a trailing slash. Default is `https://sayonika.maidcafe.cf/api/v1/` |
 
 #### Methods
 
