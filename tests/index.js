@@ -8,22 +8,23 @@
 const Terra = require("../");
 const fs = require("fs");
 let config;
-const handler = new Terra(config);
 
-if (!fs.existsSync("./config.json")) config = {token: process.env.TERRA_TOKEN};
+if (!fs.existsSync("./config.json")) config = {token: process.env.TERRA_TOKEN, api_base_url: process.env.TERRA_URL};
 else config = require("./config.json");
+
+const handler = new Terra(config.token, config.api_base_url);
 
 console.log("Beginning tests for Terra.");
 console.log(`It worked if it ends with exit 0 \n\n`);
 
 (async () => {
     console.log("Testing Terra#getUser");
-    let user = handler.getUser("");
+    let user = await handler.getUser("");
     console.log(user);
     console.log(`\n\n`);
 
     console.log("Testing Terra#getMod");
-    let mod = handler.getMod("");
+    let mod = await handler.getMod("");
     console.log(mod);
     console.log(`\n\n`);
 })().then(() => {
